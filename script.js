@@ -112,7 +112,6 @@ window.addEventListener('scroll', () => {
 
 // Form submission handlers
 const contactForm = document.querySelector('.contact-form');
-const newsletterForm = document.querySelector('.newsletter-form');
 
 if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
@@ -130,21 +129,6 @@ if (contactForm) {
     });
 }
 
-if (newsletterForm) {
-    newsletterForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        const btn = newsletterForm.querySelector('button');
-        const trans = translations[currentLanguage];
-        const originalText = btn.textContent;
-        btn.textContent = trans.subscribed;
-        btn.style.background = 'linear-gradient(135deg, #06b6d4, #0891b2)';
-        newsletterForm.reset();
-        setTimeout(() => {
-            btn.textContent = originalText;
-            btn.style.background = '';
-        }, 2000);
-    });
-}
 
 // Smooth scroll for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
