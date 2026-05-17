@@ -1,12 +1,14 @@
 // Dark Mode Toggle
 const darkModeBtn = document.getElementById('darkModeBtn');
 const html = document.documentElement;
+const logoImg = document.querySelector('.logo-img');
 
 // Check for saved dark mode preference or default to false
 const isDarkMode = localStorage.getItem('darkMode') === 'true';
 if (isDarkMode) {
     document.body.classList.add('dark-mode');
     darkModeBtn.innerHTML = '<i class="fas fa-sun"></i>';
+    logoImg.src = 'LOGO_sin_fondo.png';
 }
 
 darkModeBtn.addEventListener('click', () => {
@@ -14,6 +16,7 @@ darkModeBtn.addEventListener('click', () => {
     const isNowDark = document.body.classList.contains('dark-mode');
     localStorage.setItem('darkMode', isNowDark);
     darkModeBtn.innerHTML = isNowDark ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+    logoImg.src = isNowDark ? 'LOGO_sin_fondo.png' : 'LOGO_negro_sin_fondo.png';
 });
 
 // Mobile Menu Toggle
