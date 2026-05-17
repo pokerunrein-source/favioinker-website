@@ -224,13 +224,31 @@
         </div>
     </section>
 
-    <!-- Instagram Gallery Section -->
+    <!-- Gallery Section -->
     <section class="gallery">
         <div class="container">
-            <h2 class="section-title" data-i18n="instagramGallery">Instagram Feed</h2>
-            <p class="section-subtitle" data-i18n="followOnInstagram">Follow @favioinker for more</p>
-            <div class="instagram-feed-wrapper">
-                <div id="lightwidget-feed"></div>
+            <h2 class="section-title" data-i18n="gallery">Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="TOCA.png" alt="Favio Inker">
+                </div>
+                <div class="gallery-item">
+                    <img src="TOCA2.png" alt="Favio Inker Live">
+                </div>
+                <div class="gallery-item">
+                    <img src="TOCA.png" alt="Favio Inker Studio">
+                </div>
+                <div class="gallery-item">
+                    <img src="TOCA2.png" alt="Favio Inker Performance">
+                </div>
+            </div>
+
+            <div class="instagram-cta">
+                <h3 data-i18n="seeMoreOnInstagram">See more on Instagram</h3>
+                <p data-i18n="followForUpdates">Follow @favioinker for latest photos and updates</p>
+                <a href="https://www.instagram.com/favioinker/" target="_blank" class="btn btn-primary instagram-btn">
+                    <i class="fab fa-instagram"></i> Follow @favioinker
+                </a>
             </div>
         </div>
     </section>
@@ -307,30 +325,5 @@
     </footer>
 
     <script src="script.js"></script>
-    <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
-    <script>
-        window.addEventListener('load', () => {
-            if (window.lightwidget) {
-                window.lightwidget.options = {
-                    instagram_profile_id: 1478686946,
-                    items_number: 12,
-                    rounded_images: true,
-                    carousel: false,
-                    single_column: false,
-                    margin: 20,
-                    show_likes: true,
-                    show_comments: true,
-                    image_border: false,
-                    image_border_radius: 12,
-                    colors: {
-                        primary: '#a855f7',
-                        text: '#ffffff',
-                        shadow: 'rgba(168,85,247,0.3)'
-                    }
-                };
-                lightwidget.load('lightwidget-feed');
-            }
-        });
-    </script>
 </body>
 </html>

@@ -59,8 +59,9 @@ const translations = {
         gigsPlayed: "Conciertos Realizados",
         monthlyListeners: "Oyentes Mensuales",
         listenOnSoundCloud: "Escucha en SoundCloud",
-        instagramGallery: "Instagram Feed",
-        followOnInstagram: "Follow @favioinker for more"
+        gallery: "Galería",
+        seeMoreOnInstagram: "Ver más en Instagram",
+        followForUpdates: "Sígueme en @favioinker para las últimas fotos y actualizaciones"
     },
     en: {
         home: "Home",
@@ -121,8 +122,10 @@ const translations = {
         tracksReleased: "Tracks Released",
         gigsPlayed: "Gigs Played",
         monthlyListeners: "Monthly Listeners",
-        listenOnSpotify: "Listen on Spotify",
-        gallery: "Gallery"
+        listenOnSoundCloud: "Listen on SoundCloud",
+        gallery: "Gallery",
+        seeMoreOnInstagram: "See more on Instagram",
+        followForUpdates: "Follow @favioinker for latest photos and updates"
     },
     fr: {
         home: "Accueil",
@@ -183,8 +186,10 @@ const translations = {
         tracksReleased: "Tracks Sortis",
         gigsPlayed: "Concerts Joués",
         monthlyListeners: "Auditeurs Mensuels",
-        listenOnSpotify: "Écouter sur Spotify",
-        gallery: "Galerie"
+        listenOnSoundCloud: "Écouter sur SoundCloud",
+        gallery: "Galerie",
+        seeMoreOnInstagram: "Voir plus sur Instagram",
+        followForUpdates: "Suivez @favioinker pour les dernières photos et mises à jour"
     },
     de: {
         home: "Startseite",
@@ -245,8 +250,10 @@ const translations = {
         tracksReleased: "Tracks Veröffentlicht",
         gigsPlayed: "Auftritte",
         monthlyListeners: "Monatliche Hörer",
-        listenOnSpotify: "Auf Spotify Hören",
-        gallery: "Galerie"
+        listenOnSoundCloud: "Auf SoundCloud Hören",
+        gallery: "Galerie",
+        seeMoreOnInstagram: "Mehr auf Instagram sehen",
+        followForUpdates: "Folge @favioinker für die neuesten Fotos und Updates"
     },
     pt: {
         home: "Início",
@@ -307,8 +314,10 @@ const translations = {
         tracksReleased: "Tracks Lançados",
         gigsPlayed: "Shows Realizados",
         monthlyListeners: "Ouvintes Mensais",
-        listenOnSpotify: "Ouça no Spotify",
-        gallery: "Galeria"
+        listenOnSoundCloud: "Ouça no SoundCloud",
+        gallery: "Galeria",
+        seeMoreOnInstagram: "Ver mais no Instagram",
+        followForUpdates: "Siga @favioinker para as últimas fotos e atualizações"
     },
     ru: {
         home: "Главная",
@@ -369,7 +378,9 @@ const translations = {
         tracksReleased: "Треков Выпущено",
         gigsPlayed: "Выступлений",
         monthlyListeners: "Слушателей в Месяц",
-        listenOnSpotify: "Слушайте на Spotify",
-        gallery: "Галерея"
+        listenOnSoundCloud: "Слушайте на SoundCloud",
+        gallery: "Галерея",
+        seeMoreOnInstagram: "Смотрите больше в Instagram",
+        followForUpdates: "Подпишитесь на @favioinker для последних фотографий и обновлений"
     }
 };
