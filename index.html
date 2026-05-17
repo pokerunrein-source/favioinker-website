@@ -224,31 +224,14 @@
         </div>
     </section>
 
-    <!-- Gallery Section -->
+    <!-- Instagram Feed Section -->
     <section class="gallery">
         <div class="container">
             <h2 class="section-title" data-i18n="gallery">Gallery</h2>
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="TOCA.png" alt="Favio Inker">
-                </div>
-                <div class="gallery-item">
-                    <img src="TOCA2.png" alt="Favio Inker Live">
-                </div>
-                <div class="gallery-item">
-                    <img src="TOCA.png" alt="Favio Inker Studio">
-                </div>
-                <div class="gallery-item">
-                    <img src="TOCA2.png" alt="Favio Inker Performance">
-                </div>
-            </div>
+            <p class="section-subtitle" data-i18n="followForUpdates">Latest posts from Instagram</p>
 
-            <div class="instagram-cta">
-                <h3 data-i18n="seeMoreOnInstagram">See more on Instagram</h3>
-                <p data-i18n="followForUpdates">Follow @favioinker for latest photos and updates</p>
-                <a href="https://www.instagram.com/favioinker/" target="_blank" class="btn btn-primary instagram-btn">
-                    <i class="fab fa-instagram"></i> Follow @favioinker
-                </a>
+            <div class="instagram-embed-wrapper">
+                <div id="embedsocial-instagram"></div>
             </div>
         </div>
     </section>
@@ -325,5 +308,7 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="https://embedsocial.com/cdn/embedscript/f.js"></script>
+    <div id="embedsocial-instagram" data-embed-type="instagram" data-embed-id="1478686946" data-embed-item-count="4" data-embed-display-type="feed"></div>
 </body>
 </html>
