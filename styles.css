@@ -1097,7 +1097,7 @@ section {
     padding: 6rem 0;
 }
 
-.spotify-embed {
+.soundcloud-embed {
     max-width: 100%;
     margin: 3rem 0 0;
     border-radius: 20px;
@@ -1106,7 +1106,7 @@ section {
     border: 2px solid var(--glass-border);
 }
 
-.spotify-embed iframe {
+.soundcloud-embed iframe {
     border-radius: 18px;
     border: none;
 }

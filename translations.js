@@ -58,7 +58,7 @@ const translations = {
         tracksReleased: "Tracks Lanzados",
         gigsPlayed: "Conciertos Realizados",
         monthlyListeners: "Oyentes Mensuales",
-        listenOnSpotify: "Escucha en Spotify",
+        listenOnSoundCloud: "Escucha en SoundCloud",
         gallery: "Galería"
     },
     en: {
