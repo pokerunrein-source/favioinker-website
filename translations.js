@@ -59,10 +59,6 @@ const translations = {
         gigsPlayed: "Conciertos Realizados",
         monthlyListeners: "Oyentes Mensuales",
         listenOnSoundCloud: "Escucha en SoundCloud",
-        gallery: "Galería",
-        seeMoreOnInstagram: "Ver más en Instagram",
-        followForUpdates: "Sígueme en @favioinker para las últimas fotos y actualizaciones",
-        instagramFollowText: "Mira mis últimas fotos, historias y contenido exclusivo"
     },
     en: {
         home: "Home",
@@ -125,9 +121,6 @@ const translations = {
         monthlyListeners: "Monthly Listeners",
         listenOnSoundCloud: "Listen on SoundCloud",
         gallery: "Gallery",
-        seeMoreOnInstagram: "See more on Instagram",
-        followForUpdates: "Follow @favioinker for latest photos and updates",
-        instagramFollowText: "Check out my latest photos, stories, and exclusive content"
     },
     fr: {
         home: "Accueil",
@@ -190,9 +183,6 @@ const translations = {
         monthlyListeners: "Auditeurs Mensuels",
         listenOnSoundCloud: "Écouter sur SoundCloud",
         gallery: "Galerie",
-        seeMoreOnInstagram: "Voir plus sur Instagram",
-        followForUpdates: "Suivez @favioinker pour les dernières photos et mises à jour",
-        instagramFollowText: "Découvrez mes dernières photos, histoires et contenu exclusif"
     },
     de: {
         home: "Startseite",
@@ -254,10 +244,7 @@ const translations = {
         gigsPlayed: "Auftritte",
         monthlyListeners: "Monatliche Hörer",
         listenOnSoundCloud: "Auf SoundCloud Hören",
-        instagramFollowText: "Schauen Sie sich meine neuesten Fotos, Geschichten und exklusive Inhalte an",
         gallery: "Galerie",
-        seeMoreOnInstagram: "Mehr auf Instagram sehen",
-        followForUpdates: "Folge @favioinker für die neuesten Fotos und Updates"
     },
     pt: {
         home: "Início",
@@ -319,10 +306,7 @@ const translations = {
         gigsPlayed: "Shows Realizados",
         monthlyListeners: "Ouvintes Mensais",
         listenOnSoundCloud: "Ouça no SoundCloud",
-        instagramFollowText: "Confira minhas fotos, histórias e conteúdo exclusivo mais recentes",
         gallery: "Galeria",
-        seeMoreOnInstagram: "Ver mais no Instagram",
-        followForUpdates: "Siga @favioinker para as últimas fotos e atualizações"
     },
     ru: {
         home: "Главная",
@@ -384,9 +368,6 @@ const translations = {
         gigsPlayed: "Выступлений",
         monthlyListeners: "Слушателей в Месяц",
         listenOnSoundCloud: "Слушайте на SoundCloud",
-        instagramFollowText: "Посмотрите мои последние фотографии, истории и эксклюзивный контент",
         gallery: "Галерея",
-        seeMoreOnInstagram: "Смотрите больше в Instagram",
-        followForUpdates: "Подпишитесь на @favioinker для последних фотографий и обновлений"
     }
 };
