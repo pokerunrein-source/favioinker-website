@@ -1647,6 +1647,32 @@ section {
         padding: 1.5rem;
     }
 
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .stat-item {
+        padding: 1.5rem 1rem;
+    }
+
+    .stat-number {
+        font-size: 2.2rem;
+    }
+
+    .stat-item p {
+        font-size: 0.85rem;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .soundcloud-embed {
+        margin: 2rem 0 0;
+    }
+
     .newsletter {
         padding: 3rem 0;
     }
