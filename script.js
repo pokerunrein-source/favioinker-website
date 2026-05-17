@@ -347,41 +347,5 @@ if (statsSection) {
     statsObserver.observe(statsSection);
 }
 
-// Gallery Lightbox
-const galleryItems = document.querySelectorAll('.gallery-item');
-const lightbox = document.getElementById('lightbox');
-const lightboxImg = lightbox ? lightbox.querySelector('.lightbox-img') : null;
-const lightboxClose = lightbox ? lightbox.querySelector('.lightbox-close') : null;
-
-if (galleryItems.length > 0 && lightbox) {
-    galleryItems.forEach(item => {
-        item.addEventListener('click', () => {
-            const src = item.getAttribute('data-src');
-            if (lightboxImg) {
-                lightboxImg.src = src;
-            }
-            lightbox.classList.add('active');
-            document.body.style.overflow = 'hidden';
-        });
-    });
-
-    if (lightboxClose) {
-        lightboxClose.addEventListener('click', (e) => {
-            e.stopPropagation();
-            lightbox.classList.remove('active');
-            document.body.style.overflow = 'auto';
-        });
-    }
-
-    lightbox.addEventListener('click', () => {
-        lightbox.classList.remove('active');
-        document.body.style.overflow = 'auto';
-    });
-
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && lightbox.classList.contains('active')) {
-            lightbox.classList.remove('active');
-            document.body.style.overflow = 'auto';
-        }
-    });
-}
+// Instagram Feed loaded via LightWidget - no additional JS needed
+// LightWidget handles the gallery and lightbox functionality automatically

@@ -59,7 +59,8 @@ const translations = {
         gigsPlayed: "Conciertos Realizados",
         monthlyListeners: "Oyentes Mensuales",
         listenOnSoundCloud: "Escucha en SoundCloud",
-        gallery: "Galería"
+        instagramGallery: "Instagram Feed",
+        followOnInstagram: "Follow @favioinker for more"
     },
     en: {
         home: "Home",
