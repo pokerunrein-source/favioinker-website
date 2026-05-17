@@ -53,7 +53,13 @@ const translations = {
         sendMessage: "Enviar Mensaje",
         copyright: "Todos los derechos reservados.",
         messageSent: "✓ ¡Mensaje Enviado!",
-        subscribed: "✓ ¡Suscrito!"
+        subscribed: "✓ ¡Suscrito!",
+        yearsActive: "Años Activo",
+        tracksReleased: "Tracks Lanzados",
+        gigsPlayed: "Conciertos Realizados",
+        monthlyListeners: "Oyentes Mensuales",
+        listenOnSpotify: "Escucha en Spotify",
+        gallery: "Galería"
     },
     en: {
         home: "Home",
@@ -109,7 +115,13 @@ const translations = {
         sendMessage: "Send Message",
         copyright: "All rights reserved.",
         messageSent: "✓ Message Sent!",
-        subscribed: "✓ Subscribed!"
+        subscribed: "✓ Subscribed!",
+        yearsActive: "Years Active",
+        tracksReleased: "Tracks Released",
+        gigsPlayed: "Gigs Played",
+        monthlyListeners: "Monthly Listeners",
+        listenOnSpotify: "Listen on Spotify",
+        gallery: "Gallery"
     },
     fr: {
         home: "Accueil",
@@ -165,7 +177,13 @@ const translations = {
         sendMessage: "Envoyer le Message",
         copyright: "Tous droits réservés.",
         messageSent: "✓ Message Envoyé!",
-        subscribed: "✓ Abonné!"
+        subscribed: "✓ Abonné!",
+        yearsActive: "Années Actives",
+        tracksReleased: "Tracks Sortis",
+        gigsPlayed: "Concerts Joués",
+        monthlyListeners: "Auditeurs Mensuels",
+        listenOnSpotify: "Écouter sur Spotify",
+        gallery: "Galerie"
     },
     de: {
         home: "Startseite",
@@ -221,7 +239,13 @@ const translations = {
         sendMessage: "Nachricht Senden",
         copyright: "Alle Rechte vorbehalten.",
         messageSent: "✓ Nachricht Gesendet!",
-        subscribed: "✓ Abonniert!"
+        subscribed: "✓ Abonniert!",
+        yearsActive: "Jahre Aktiv",
+        tracksReleased: "Tracks Veröffentlicht",
+        gigsPlayed: "Auftritte",
+        monthlyListeners: "Monatliche Hörer",
+        listenOnSpotify: "Auf Spotify Hören",
+        gallery: "Galerie"
     },
     pt: {
         home: "Início",
@@ -277,7 +301,13 @@ const translations = {
         sendMessage: "Enviar Mensagem",
         copyright: "Todos os direitos reservados.",
         messageSent: "✓ Mensagem Enviada!",
-        subscribed: "✓ Inscrito!"
+        subscribed: "✓ Inscrito!",
+        yearsActive: "Anos Ativo",
+        tracksReleased: "Tracks Lançados",
+        gigsPlayed: "Shows Realizados",
+        monthlyListeners: "Ouvintes Mensais",
+        listenOnSpotify: "Ouça no Spotify",
+        gallery: "Galeria"
     },
     ru: {
         home: "Главная",
@@ -333,6 +363,12 @@ const translations = {
         sendMessage: "Отправить Сообщение",
         copyright: "Все права защищены.",
         messageSent: "✓ Сообщение Отправлено!",
-        subscribed: "✓ Подписан!"
+        subscribed: "✓ Подписан!",
+        yearsActive: "Лет Активности",
+        tracksReleased: "Треков Выпущено",
+        gigsPlayed: "Выступлений",
+        monthlyListeners: "Слушателей в Месяц",
+        listenOnSpotify: "Слушайте на Spotify",
+        gallery: "Галерея"
     }
 };

@@ -281,3 +281,107 @@ const lazyObserver = new IntersectionObserver((entries) => {
 });
 
 lazyElements.forEach(el => lazyObserver.observe(el));
+
+// Typing Animation on Hero Subtitle
+function typeWriter(element, text, speed = 80) {
+    element.textContent = '';
+    let i = 0;
+    const timer = setInterval(() => {
+        if (i < text.length) {
+            element.textContent += text.charAt(i++);
+        } else {
+            clearInterval(timer);
+        }
+    }, speed);
+}
+
+window.addEventListener('load', () => {
+    const subtitleEl = document.querySelector('.subtitle');
+    if (subtitleEl) {
+        const originalText = subtitleEl.getAttribute('data-i18n');
+        const trans = translations[currentLanguage];
+        if (trans[originalText]) {
+            typeWriter(subtitleEl, trans[originalText], 60);
+        }
+    }
+});
+
+// Counter Animation for Stats
+function animateCounter(element, target) {
+    const duration = 2000;
+    const start = 0;
+    const startTime = Date.now();
+
+    const updateCounter = () => {
+        const elapsed = Date.now() - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        const current = Math.floor(start + (target - start) * progress);
+        element.textContent = current;
+
+        if (progress < 1) {
+            requestAnimationFrame(updateCounter);
+        } else {
+            element.textContent = target;
+        }
+    };
+
+    updateCounter();
+}
+
+const statsObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting && !entry.target.dataset.animated) {
+            entry.target.dataset.animated = 'true';
+            const statNumbers = entry.target.querySelectorAll('.stat-number');
+            statNumbers.forEach(stat => {
+                const target = parseInt(stat.getAttribute('data-target'));
+                animateCounter(stat, target);
+            });
+            statsObserver.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.3 });
+
+const statsSection = document.querySelector('.stats');
+if (statsSection) {
+    statsObserver.observe(statsSection);
+}
+
+// Gallery Lightbox
+const galleryItems = document.querySelectorAll('.gallery-item');
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = lightbox ? lightbox.querySelector('.lightbox-img') : null;
+const lightboxClose = lightbox ? lightbox.querySelector('.lightbox-close') : null;
+
+if (galleryItems.length > 0 && lightbox) {
+    galleryItems.forEach(item => {
+        item.addEventListener('click', () => {
+            const src = item.getAttribute('data-src');
+            if (lightboxImg) {
+                lightboxImg.src = src;
+            }
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+    });
+
+    if (lightboxClose) {
+        lightboxClose.addEventListener('click', (e) => {
+            e.stopPropagation();
+            lightbox.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        });
+    }
+
+    lightbox.addEventListener('click', () => {
+        lightbox.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+    });
+}

@@ -91,6 +91,34 @@
         </div>
     </section>
 
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="15">0</span>
+                    <span class="stat-plus">+</span>
+                    <p data-i18n="yearsActive">Years Active</p>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="50">0</span>
+                    <span class="stat-plus">+</span>
+                    <p data-i18n="tracksReleased">Tracks Released</p>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="200">0</span>
+                    <span class="stat-plus">+</span>
+                    <p data-i18n="gigsPlayed">Gigs Played</p>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="10000">0</span>
+                    <span class="stat-plus">+</span>
+                    <p data-i18n="monthlyListeners">Monthly Listeners</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Tracks Section -->
     <section id="tracks" class="tracks">
         <div class="container">
@@ -128,6 +156,16 @@
 
             <div class="view-all">
                 <a href="https://soundcloud.com/favio-inker" target="_blank" class="btn btn-primary" data-i18n="viewAllTracks">View All Tracks</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Spotify Embed Section -->
+    <section class="music-player">
+        <div class="container">
+            <h2 class="section-title" data-i18n="listenOnSpotify">Listen on Spotify</h2>
+            <div class="spotify-embed">
+                <iframe src="https://open.spotify.com/embed/artist/1pTZcOl9WKKgGPLO3E9eeq" width="100%" height="380" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
             </div>
         </div>
     </section>
@@ -180,6 +218,35 @@
                     <h3 data-i18n="soundStyle">Sound & Style</h3>
                     <p data-i18n="aboutText3">Specializing in indie dance, his productions and DJ sets blend intricate melodies with driving rhythms, creating an immersive experience on the dance floor. Whether through original tracks or remixes, Favio's work reflects his commitment to quality and artistic expression.</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <div class="container">
+            <h2 class="section-title" data-i18n="gallery">Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-src="TOCA.png">
+                    <img src="TOCA.png" alt="Favio Inker">
+                    <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                </div>
+                <div class="gallery-item" data-src="TOCA2.png">
+                    <img src="TOCA2.png" alt="Favio Inker">
+                    <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                </div>
+                <div class="gallery-item" data-src="TOCA2.png">
+                    <img src="TOCA2.png" alt="Favio Inker Live">
+                    <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                </div>
+                <div class="gallery-item" data-src="TOCA.png">
+                    <img src="TOCA.png" alt="Favio Inker Studio">
+                    <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+                </div>
+            </div>
+            <div class="lightbox" id="lightbox">
+                <button class="lightbox-close">&times;</button>
+                <img src="" alt="" class="lightbox-img">
             </div>
         </div>
     </section>
