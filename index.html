@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="translations.js"></script>
 </head>
 <body>
     <!-- Navigation -->
@@ -18,16 +19,26 @@
                 <img src="LOGO_negro_sin_fondo.png" alt="Favio Inker" class="logo-img">
             </div>
             <ul class="nav-menu">
-                <li><a href="#home" class="nav-link active">Home</a></li>
-                <li><a href="#tracks" class="nav-link">Tracks</a></li>
-                <li><a href="#gigs" class="nav-link">Gigs</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#home" class="nav-link active" data-i18n="home">Home</a></li>
+                <li><a href="#tracks" class="nav-link" data-i18n="tracks">Tracks</a></li>
+                <li><a href="#gigs" class="nav-link" data-i18n="gigs">Gigs</a></li>
+                <li><a href="#about" class="nav-link" data-i18n="about">About</a></li>
+                <li><a href="#contact" class="nav-link" data-i18n="contact">Contact</a></li>
             </ul>
-            <div class="theme-toggle">
-                <button id="darkModeBtn" class="dark-mode-btn" title="Toggle Dark Mode">
-                    <i class="fas fa-moon"></i>
-                </button>
+            <div class="controls-group">
+                <div class="language-selector">
+                    <button class="lang-btn active" data-lang="es" title="Español">ES</button>
+                    <button class="lang-btn" data-lang="en" title="English">EN</button>
+                    <button class="lang-btn" data-lang="fr" title="Français">FR</button>
+                    <button class="lang-btn" data-lang="de" title="Deutsch">DE</button>
+                    <button class="lang-btn" data-lang="pt" title="Português">PT</button>
+                    <button class="lang-btn" data-lang="ru" title="Русский">RU</button>
+                </div>
+                <div class="theme-toggle">
+                    <button id="darkModeBtn" class="dark-mode-btn" title="Toggle Dark Mode">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
             </div>
             <div class="hamburger">
                 <span></span>
@@ -45,11 +56,11 @@
         <div class="hero-overlay"></div>
         <div class="hero-content">
             <img src="LOGO_sin_fondo.png" alt="Favio Inker" class="hero-logo">
-            <p class="subtitle">DJ & Producer | Indie Dance Specialist</p>
-            <p class="location">🇦🇷 Buenos Aires | 🇮🇪 Dublin</p>
+            <p class="subtitle" data-i18n="subtitle">DJ & Producer | Indie Dance Specialist</p>
+            <p class="location" data-i18n="location">🇦🇷 Buenos Aires | 🇮🇪 Dublin</p>
             <div class="hero-buttons">
-                <a href="#tracks" class="btn btn-primary">Explore Music</a>
-                <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                <a href="#tracks" class="btn btn-primary" data-i18n="exploreMusic">Explore Music</a>
+                <a href="#contact" class="btn btn-secondary" data-i18n="getInTouch">Get in Touch</a>
             </div>
         </div>
         <div class="hero-bg"></div>
@@ -58,7 +69,7 @@
     <!-- Streaming Platforms -->
     <section class="platforms">
         <div class="container">
-            <h3>Stream on</h3>
+            <h3 data-i18n="streamOn">Stream on</h3>
             <div class="platforms-grid">
                 <a href="https://open.spotify.com/artist/1pTZcOl9WKKgGPLO3E9eeq" target="_blank" class="platform-link spotify">
                     <i class="fab fa-spotify"></i>

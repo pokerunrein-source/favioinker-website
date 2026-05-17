@@ -1,3 +1,53 @@
+// Language Management
+let currentLanguage = localStorage.getItem('language') || 'es';
+
+function setLanguage(lang) {
+    currentLanguage = lang;
+    localStorage.setItem('language', lang);
+    updatePageLanguage();
+    updateLanguageButtons();
+}
+
+function updateLanguageButtons() {
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.remove('active');
+        if (btn.getAttribute('data-lang') === currentLanguage) {
+            btn.classList.add('active');
+        }
+    });
+}
+
+function updatePageLanguage() {
+    const trans = translations[currentLanguage];
+
+    // Update text content
+    document.querySelectorAll('[data-i18n]').forEach(element => {
+        const key = element.getAttribute('data-i18n');
+        if (trans[key]) {
+            element.textContent = trans[key];
+        }
+    });
+
+    // Update placeholders
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(element => {
+        const key = element.getAttribute('data-i18n-placeholder');
+        if (trans[key]) {
+            element.placeholder = trans[key];
+        }
+    });
+}
+
+// Language button event listeners
+document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        setLanguage(btn.getAttribute('data-lang'));
+    });
+});
+
+// Initialize language on page load
+updatePageLanguage();
+updateLanguageButtons();
+
 // Dark Mode Toggle
 const darkModeBtn = document.getElementById('darkModeBtn');
 const html = document.documentElement;
@@ -68,8 +118,9 @@ if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
         e.preventDefault();
         const btn = contactForm.querySelector('button');
+        const trans = translations[currentLanguage];
         const originalText = btn.textContent;
-        btn.textContent = '✓ Message Sent!';
+        btn.textContent = trans.messageSent;
         btn.style.background = 'linear-gradient(135deg, #06b6d4, #0891b2)';
         contactForm.reset();
         setTimeout(() => {
@@ -83,8 +134,9 @@ if (newsletterForm) {
     newsletterForm.addEventListener('submit', (e) => {
         e.preventDefault();
         const btn = newsletterForm.querySelector('button');
+        const trans = translations[currentLanguage];
         const originalText = btn.textContent;
-        btn.textContent = '✓ Subscribed!';
+        btn.textContent = trans.subscribed;
         btn.style.background = 'linear-gradient(135deg, #06b6d4, #0891b2)';
         newsletterForm.reset();
         setTimeout(() => {

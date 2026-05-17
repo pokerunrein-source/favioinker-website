@@ -159,6 +159,48 @@ a, button {
     box-shadow: 0 0 20px rgba(255, 107, 107, 0.3);
 }
 
+.controls-group {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.language-selector {
+    display: flex;
+    gap: 0.6rem;
+    padding: 0.5rem;
+    background: var(--glass-bg);
+    border-radius: 10px;
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(10px);
+}
+
+.lang-btn {
+    padding: 0.5rem 0.8rem;
+    border: 2px solid var(--border-color);
+    background: transparent;
+    color: var(--text-dark);
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 0.75rem;
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    letter-spacing: 0.5px;
+}
+
+.lang-btn:hover {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+    transform: scale(1.1);
+}
+
+.lang-btn.active {
+    background: linear-gradient(135deg, #ff6b6b, #a855f7);
+    color: white;
+    border-color: var(--accent-color);
+    box-shadow: 0 4px 12px rgba(255, 107, 107, 0.3);
+}
+
 .theme-toggle {
     display: flex;
     gap: 1rem;
