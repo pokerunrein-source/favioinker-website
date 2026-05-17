@@ -829,13 +829,20 @@ section {
 
 .about-image {
     position: relative;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .about-img {
     width: 100%;
+    max-width: 100%;
     height: auto;
+    min-height: 500px;
+    object-fit: cover;
     border-radius: 20px;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
     transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
     animation: slideInLeft 0.8s ease-out;
 }
